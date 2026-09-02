@@ -5,9 +5,10 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.wallet-app"
     },
     "android": {
       "adaptiveIcon": {
@@ -20,6 +21,18 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#1A1838",
+          "image": "./assets/icon.png",
+          "imageWidth": 180,
+          "resizeMode": "contain"
+        }
+      ]
+    ]
   }
 }
